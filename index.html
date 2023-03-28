@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page With Light/Dark Mode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+<div class="circle"></div>
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/Logo1.png" alt="Logo" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#" class="btn">Sign up</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Nike</h1>
+                <h1>Running shoes</h1>
+              </div>
+              <p class="text">
+                Introducing the new Nike Air Running shoes.
+              </p>
+              <div class="cta">
+                <a href="#" class="btn">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="./img/nike1.png" alt="Person Image" class="person" />
+              
+              <ul class="thumb">
+                <li><img src="./img/nike1.png" onclick="imgSlider('./img/nike1.png')" class="rev"></li>
+                <li><img src="./img/nike2.png" onclick="imgSlider('./img/nike2.png')" class="rev"></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+       
+      </div>
+    </main>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
