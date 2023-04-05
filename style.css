@@ -41,10 +41,6 @@ body {
   background: var(--mainColor);
   clip-path: polygon(100% 100%, 25% 100%, 100% 25%);
 
-
-
-
-
 }
 
 .stop-scrolling {
@@ -255,48 +251,11 @@ header .container {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
-.person {
+.product {
   width: 100%;
   transform: translate(15%, 25px);
 }
 
-.toggle-btn {
-  display: inline-block;
-  border: none;
-  background: var(--darkTwo);
-  color: var(--backgroundColor);
-  outline: none;
-  cursor: pointer;
-  height: 39px;
-  width: 39px;
-  border-radius: 50%;
-  font-size: 1.1rem;
-  transition: 0.3s;
-}
-
-.toggle-btn i {
-  line-height: 39px;
-}
-
-.toggle-btn:hover {
-  background: var(--mainColor);
-}
-
-.big-wrapper.light .toggle-btn i:last-child {
-  display: none;
-}
-
-.big-wrapper.light .toggle-btn i:first-child {
-  display: block;
-}
-
-.big-wrapper.dark .toggle-btn i:last-child {
-  display: block;
-}
-
-.big-wrapper.dark .toggle-btn i:first-child {
-  display: none;
-}
 
 .shape {
   position: absolute;
@@ -317,7 +276,7 @@ header .container {
 
 @keyframes appear {
   0% {
-    clip-path: circle(30% at -25% -25%);
+    clip-path: circle(30% at 89% 97%);
   }
   100% {
     clip-path: circle(150% at 0 0);
@@ -327,6 +286,26 @@ header .container {
 @media screen and (max-width: 870px) {
   .hamburger-menu {
     display: flex;
+  }
+
+  @keyframes appear {
+    0% {
+      clip-path: circle(30% at 60% 100%);
+    }
+    100% {
+      clip-path: circle(150% at 0 0);
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--mainColor);
+    clip-path: polygon(0 75%, 100% 40%, 100% 100%, 0% 100%);
+  
   }
 
   .links {
@@ -403,7 +382,7 @@ header .container {
     margin: 1.4rem 0 1.5rem;
   }
 
-  .person {
+  .product {
     transform: none;
     margin-right: 10px;
   }
